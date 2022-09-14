@@ -1,0 +1,19 @@
+
+
+
+
+@mixin font($color, $size) {
+    color: $color;
+    font-size: $size;
+    
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// $color: (
+//     header: #6E9D74
+//     footer:#5A7B81
+// )

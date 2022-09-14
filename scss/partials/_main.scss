@@ -1,0 +1,36 @@
+
+main{
+    width: 100%;
+   
+}
+.main__img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6d6c6c;
+    height: auto;
+    padding-top: 10px;
+    padding-inline: 10px;
+    
+
+    .main__h1{
+        @include font(#69886dd3, 4vh)
+        
+        
+    }
+    .mian__h2{
+        @include font(#7e7e7c, 4vh)
+        
+    }
+    .main__p{
+        @include font(#7e7e7c, 3vh);
+        margin: 10px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@100;300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.header__conteiner {
+  background-color: #6e9d74;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header__conteiner .header__logo {
+    width: 160px; }
+  .header__conteiner .header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; }
+    .header__conteiner .header__nav .header__ul {
+      display: flex;
+      list-style: none; }
+      .header__conteiner .header__nav .header__ul .active {
+        background-color: #00000036;
+        border-radius: 15px;
+        padding: 5px; }
+      .header__conteiner .header__nav .header__ul .header__item a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 15px;
+        font-size: 2.7vh; }
+
+.nav__label, .nav__input {
+  display: none; }
+
+@media (max-width: 768px) {
+  .nav__label {
+    display: block;
+    cursor: pointer; }
+  .header__conteiner {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px; }
+    .header__conteiner .header__logo {
+      width: 130px; }
+    .header__conteiner .nav__input:checked + .header__nav {
+      clip-path: circle(100% at center); }
+    .header__conteiner .header__nav {
+      position: fixed;
+      bottom: 0;
+      background-color: #5a7b81d0;
+      height: 90vh;
+      right: 0;
+      clip-path: circle(0 at center);
+      transition: clip-path .5s ease-in-out;
+      z-index: 1; }
+      .header__conteiner .header__nav .header__ul {
+        height: 50vh;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center; } }
+
+main {
+  width: 100%; }
+
+.main__img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover; }
+
+.main_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6d6c6c;
+  height: auto;
+  padding-top: 10px;
+  padding-inline: 10px; }
+  .main_text .main__h1 {
+    color: #69886dd3;
+    font-size: 4vh; }
+  .main_text .mian__h2 {
+    color: #7e7e7c;
+    font-size: 4vh; }
+  .main_text .main__p {
+    color: #7e7e7c;
+    font-size: 3vh;
+    margin: 10px;
+    text-align: center; }
+
+.form_contenedor {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 82vh;
+  width: 100%; }
+
+.form_contenedor form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 5px 5px 10px 10px rgba(70, 68, 68, 0.452);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem; }
+  .form_contenedor form .form__text {
+    align-items: center; }
+
+.btn {
+  background-color: #6e9d74;
+  color: white;
+  border-radius: 100px;
+  padding: .5rem;
+  margin: .5rem;
+  font-size: 1.2rem;
+  cursor: pointer; }
+
+.form_bgrn, .form_comentario {
+  background-color: #6e9d7475;
+  width: 100%;
+  border-radius: 10px;
+  height: 5vh;
+  margin-bottom: 15px; }
+  .form_bgrn:hover, .form_comentario:hover {
+    border: 5px solid #6e9d7463; }
+
+.form_comentario {
+  height: 15vh; }
+
+.galeria__conteiner {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: .5rem;
+  row-gap: .5rem; }
+  .galeria__conteiner .galeria__img {
+    width: 100%; }
+    .galeria__conteiner .galeria__img img {
+      width: 100%;
+      height: 38.5vh;
+      object-fit: cover; }
+
+@media (min-width: 100px) {
+  .galeria__conteiner {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media (min-width: 520px) {
+  .galeria__conteiner {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media (min-width: 728px) {
+  .galeria__conteiner {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 1024px) {
+  .galeria__conteiner {
+    grid-template-columns: repeat(3, 1fr); } }
+
+footer {
+  margin-top: auto; }
+
+.footer__ul {
+  display: flex;
+  list-style: none;
+  align-content: center;
+  padding: 15px;
+  background-color: #5A7B81;
+  height: 10vh; }
